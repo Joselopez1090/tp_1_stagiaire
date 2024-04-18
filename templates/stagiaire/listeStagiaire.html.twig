@@ -1,0 +1,18 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Liste{% endblock %}
+
+{% block body %}
+<h3>Bienvenue dans la liste des stagiaires </h3>
+<ul>
+{% for stagiaire in stagiaires %}
+<li>
+<a href={{path('stagiaire',{id:stagiaire.id,nom:stagiaire.nom|lower})}}>{{stagiaire.nom}}</a>
+</li>
+
+{% else %}
+<p>Pas encore de stagiaire</p>
+{% endfor %}
+</ul>
+
+{% endblock %}

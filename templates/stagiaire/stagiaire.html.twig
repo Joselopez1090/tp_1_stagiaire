@@ -1,0 +1,17 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Voiture{% endblock %}
+
+{% block body %}
+<h3>Bienvenue sur la page du stagiaire numero : {{stagiaire.id}}</h3>
+<h4>Nom : {{stagiaire.nom}} </h4>
+<h4>Prenom : {{stagiaire.prenom}}</h4>
+<h4>Email : {{stagiaire.email}}</h4>
+<h4>Adresse : {{stagiaire.adresse}}</h4>
+<h4>Age : {{stagiaire.age}}</h4>
+<h4>Date de naissance : {{stagiaire.datedenaissance|date}}</h4>
+
+
+
+
+{% endblock %}
